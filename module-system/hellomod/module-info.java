@@ -1,0 +1,3 @@
+module hellomod {
+    requires helloservice;
+}
