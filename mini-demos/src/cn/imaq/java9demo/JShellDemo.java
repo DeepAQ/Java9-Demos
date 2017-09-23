@@ -1,4 +1,4 @@
-package cn.imaq.java9demo.jshell;
+package cn.imaq.java9demo;
 
 import jdk.jshell.JShell;
 import jdk.jshell.SnippetEvent;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-public class MyJShell {
+public class JShellDemo {
     public static void main(String[] args) {
         JShell shell = JShell.create();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

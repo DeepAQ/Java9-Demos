@@ -1,0 +1,3 @@
+module logapp {
+    requires logger;
+}

@@ -37,7 +37,37 @@ $2 ==> OptionalDouble[5.6]
 jshell> /exit
 |  再见
 ```
-- [在程序中调用 JShell 的 Demo](mini-demos/src/cn/imaq/java9demo/jshell/MyJShell.java)
+- [**在程序中调用 JShell 的 Demo**](mini-demos/src/cn/imaq/java9demo/JShellDemo.java)
 
 ## 其它更新
+
+### 基础 API 更新
+
+| JEP 编号 | 更新内容 |
+| --- | --- |
+| JEP 102 | Process API Updates / 操作系统进程管理 API 更新<br>[**Demo: 获取系统进程信息 & Pipeline 演示**](mini-demos/src/cn/imaq/java9demo/ProcessAPIDemo.java) |
+| JEP 110 | HTTP 2 Client / HTTP2 客户端<br>支持 HTTP/2 (并向下兼容 HTTP/1.1) 的异步 HTTP 客户端，位于 Incubator 包内。<br>[**Demo: 异步执行 HTTP/1.1 及 HTTP/2 请求**](mini-demos/src/cn/imaq/java9demo/HttpClientDemo.java) |
+| JEP 193 | Variable Handles / 变量引用<br>用于在部分场合替代 Unsafe (然而 JDK 貌似没把坑填完，目前的 Atomic 系列还是在用 Unsafe 实现)<br>[**Demo: 用 VarHandle 实现简易版 AtomicInteger**](mini-demos/src/cn/imaq/java9demo/VarHandleDemo.java) |
+| JEP 254 | Compact Strings / 字符串存储方式变更<br>String 再也不用 char[] 来存储啦，改成了 byte[] 加上编码标记，节约了一些空间。 |
+| JEP 259 | Stack-Walking API / 堆栈跟踪接口更新<br>[**Demo: 利用新接口获取当前运行时堆栈**](mini-demos/src/cn/imaq/java9demo/StackWalkDemo.java) |
+| JEP 264 | Platform Logging API and Service / 统一日志接口<br>提供统一的日志服务接口，可自行编写日志记录器。<br>[**Demo: 提供自定义日志记录器**](platform-logging/) |
+| JEP 266 | More Concurrency Updates / 并发包更新<br>_这坑看上去有点大，日后再填_ |
+| JEP 269 | Convenience Factory Methods for Collections / 简化集合创建方法<br>终于可以快速创建(只读)集合对象了！ [**Demo**](mini-demos/src/cn/imaq/java9demo/CollectionsDemo.java) |
+| JEP 274 | Enhanced Method Handles / 方法引用更新<br>_日后再填_ |
+| JEP 285 | Spin-Wait Hints / 自旋指示<br>提供 API 用于指示自旋循环以提高自旋时的性能。<br>[**Demo: 用自旋锁实现生产者-消费者模式**](mini-demos/src/cn/imaq/java9demo/SpinWaitDemo.java) |
+
+### 客户端技术 (AWT / Swing / JavaFX) 更新
+
+TODO
+
+### Java 语法更新
+
+TODO
+
+### JDK 更新
+
+TODO
+
+### JVM 更新
+
 TODO
