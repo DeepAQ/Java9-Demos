@@ -58,11 +58,33 @@ jshell> /exit
 
 ### 客户端技术 (AWT / Swing / JavaFX) 更新
 
-TODO
+| JEP 编号 | 更新内容 |
+| --- | --- |
+| JEP 251 | Multi-Resolution Images / 多分辨率图片<br>[**Demo: 简单多分辨率图片测试**](mini-demos/src/cn/imaq/java9demo/MultiResolutionImageDemo.java) |
+| JEP 262 | TIFF Image I/O<br>ImageIO 增加了对 TIFF 格式的支持 |
+| JEP 263 | HiDPI Graphics on Windows and Linux<br>AWT / Swing 正式支持高分辨率屏幕 |
+| JEP 272 | Platform-Specific Desktop Features / 分平台桌面特性<br>参考 [java.awt.Desktop](https://docs.oracle.com/javase/9/docs/api/java/awt/Desktop.html) 中的新方法 |
 
 ### Java 语法更新
 
-TODO
+- try 语句更新
+    - Java 8
+    ```java
+    try (Resource r1 = resource1; Resource r2 = resource2; ...) {
+        ...
+    }
+    ```
+    
+    - Java 9
+    ```java
+    try (resource1; resource2; ...) {
+        ...
+    }
+    ```
+
+- 下划线 (_) 不再可以作为标识符
+
+- 接口中的方法可以为 private
 
 ### JDK 更新
 
