@@ -77,6 +77,9 @@ jshell> /exit
     
     - Java 9
     ```java
+    Resource r1 = resource1; 
+    Resource r2 = resource2; 
+    ...
     try (resource1; resource2; ...) {
         ...
     }
